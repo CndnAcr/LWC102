@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Getter">
+
+        <h1>Toplam: {result}</h1> <!-- bu sekilde de olabilirdi ama getter kullanalim -->
+
+        <!-- getter'larin ismiyle degerleri yazdiririz -->
+        <h1>Toplama: {toplama}</h1>
+        <h1>Cikarma: {cikarma}</h1>
+        <h1>Carpma: {carpma}</h1>
+        <h1>Bolme: {bolme}</h1>
+
+        <!-- <h1>Listedeki Ilk Isim: {isimListesi[0]}</h1> calismaz. JS'de getter olusturalim-->
+        <h1>Listedeki Ilk Isim: {ilkIsim}</h1>
+        <h1>Listedeki Son Isim: {sonIsim}</h1>
+
+    </lightning-card>
+
+    <lightning-card type="Getter Array Index">
+        <input type="number" placeholder="0-4 arasi bir numara giriniz" onblur={handleBlur}>
+        <h1>{girilenIndex}</h1> <!--get fonksiyonunun adi 'girilenIndex' olacak-->
+
+    </lightning-card>
+</template>
